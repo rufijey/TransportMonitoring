@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace DAL.Repositories.Intefaces
 {
-    public interface IRouteRepository
-        : IRepository<Route>
+    public interface IVehicleRepository : IRepository<Vehicle>
     {
+        IEnumerable<Vehicle> GetVehiclesByStatus(string status);
     }
 }

@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repositories.Intefaces
 {
-    public interface IDriverRepository
-         : IRepository<Driver>
+    public interface IDriverRepository : IRepository<Driver>
     {
     }
 }
