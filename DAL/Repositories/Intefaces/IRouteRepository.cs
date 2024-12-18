@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace DAL.Repositories.Intefaces
 {
-    public interface IRouteRepository
-        : IRepository<Route>
+    public interface IRouteRepository : IRepository<Route>
     {
+        IEnumerable<Route> GetRoutesByNumber(int routeNumber);
+
     }
 }
